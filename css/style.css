@@ -655,11 +655,15 @@ footer a:hover {
     padding: 0 2rem;
     background-position: 55%;
   }
-  h2 {
-    font-size: 3.2rem;
+  #hero h4 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
   }
-  h1 {
-    font-size: 3.3rem;
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero h2 {
+    font-size: 3rem;
   }
   .section-p1 {
     padding: 2rem;
