@@ -102,10 +102,11 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   color: #1a1a1a;
-  transition: 0.3s ease;
+  transform: scale(0, 1);
+  transition: 4s ease;
 }
 .svg {
-  color: #1a1a1a;
+  border: none;
 }
 #navbar li a:hover,
 #navbar li a.active {
@@ -120,7 +121,19 @@ body {
   position: absolute;
   bottom: -4px;
   left: 20px;
+  transform: scale(1, 1);
 }
+#navbar.active {
+  right: 0;
+}
+#mobile {
+  display: none;
+  align-items: center;
+}
+#close {
+  display: none;
+}
+
 #hero {
   height: 90vh;
   background-position: top 25% right 0;
@@ -158,6 +171,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 #feature .fe-box {
   width: 18rem;
@@ -167,7 +181,7 @@ body {
   padding: 2.5rem 1.5rem;
   border: 1px solid #cce7d0;
   border-radius: 4px;
-  margin: 1.5rem;
+  margin: 1.5rem 0;
 }
 #feature .fe-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
@@ -361,4 +375,330 @@ body {
   color: #ec544e;
   font-weight: 800;
   font-size: 1.5rem;
+}
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(/img/banner/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+#newsletter h4 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+#newsletter p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #818ea0;
+}
+#newsletter p span {
+  color: #ffbd27;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+#newsletter input {
+  height: 3.125rem;
+  padding: 2rem 2.25rem;
+  font-size: 1.4rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  padding: 1rem 3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+footer .logo {
+  margin-bottom: 3rem;
+}
+footer h4 {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+footer p {
+  font-size: 1.3rem;
+  margin: 0 0 8px 0;
+}
+footer a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+footer .follow {
+  margin-top: 2rem;
+}
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 1rem 0 1.5rem 0;
+}
+footer .follow i:hover,
+footer a:hover {
+  color: #088178;
+}
+
+/* //////////////// */
+#prodetails {
+  display: flex;
+  margin-top: 2rem;
+}
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 5rem;
+}
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 3rem;
+}
+#prodetails .single-pro-details h4 {
+  padding: 4rem 0 2rem 0;
+}
+#prodetails .single-pro-details h2 {
+  font-size: 2.6rem;
+}
+#prodetails .single-pro-details select {
+  padding: 5px 10px;
+  display: block;
+  margin-bottom: 1rem;
+}
+#prodetails .single-pro-details input {
+  width: 5rem;
+  height: 4.7rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+#prodetails .single-pro-details input:focus {
+  outline: none;
+}
+#prodetails .single-pro-details span {
+  line-height: 25px;
+}
+
+#prodetails .single-pro-details button {
+  background-color: #088178;
+  color: #fff;
+}
+/* //////////////////////// */
+#page-header {
+  background-image: url(/img/banner/b1.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.4rem;
+}
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+}
+#pagination a {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 4rem 4rem;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300rem;
+    height: 100vh;
+    width: 30rem;
+    transition: 0.3s;
+    background-color: #e3e6f3;
+    justify-content: flex-start;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
+    padding: 8rem 0 0 1rem;
+  }
+  #navbar li {
+    margin-bottom: 2.5rem;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 2.4rem;
+    padding-left: 2rem;
+  }
+  #close {
+    position: absolute;
+    display: block;
+    top: 3rem;
+    left: 3rem;
+    color: #222;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+  #lg-bag {
+    display: none;
+  }
+  #hero {
+    height: 70vh;
+    background-position: top 30% right 30%;
+    padding: 0 8rem;
+  }
+  #feature {
+    display: flex;
+    justify-content: center;
+  }
+  #feature .fe-box {
+    margin: 1.5rem 1.5rem;
+  }
+  #product1 .pro-container {
+    justify-content: center;
+  }
+  #product1 .pro {
+    margin: 1.5rem;
+  }
+  #banner {
+    height: 40vh;
+  }
+  #banner3 {
+    padding: 0 4rem;
+  }
+  #sm-banner .banner-box {
+    height: 50vh;
+    min-width: 100%;
+  }
+  #banner3 .banner-box {
+    width: 28%;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #banner3 .banner-box h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  #banner3 .banner-box h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  #newsletter .form {
+    width: 70%;
+  }
+}
+@media (max-width: 477px) {
+  #header {
+    padding: 1rem 3rem;
+  }
+  #hero {
+    padding: 0 2rem;
+    background-position: 55%;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  h1 {
+    font-size: 3.3rem;
+  }
+  .section-p1 {
+    padding: 2rem;
+  }
+  #feature {
+    justify-content: space-between;
+  }
+  #feature .fe-box {
+    width: 15.5rem;
+    margin: 0 0 1.5rem 0;
+  }
+  #product1 .pro {
+    width: 100%;
+  }
+  #sm-banner .banner-box2 {
+    margin-top: 2rem;
+  }
+  #banner3 {
+    padding: 0 2rem;
+  }
+  #banner3 .banner-box {
+    width: 100%;
+    align-items: flex-start;
+  }
+  #banner3 .banner-box h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 5.4rem;
+  }
+  #banner3 .banner-box h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  #newsletter {
+    padding: 4rem 2rem;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
 }
