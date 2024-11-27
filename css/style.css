@@ -701,4 +701,15 @@ footer a:hover {
   #newsletter .form {
     width: 100%;
   }
+  #prodetails {
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0rem;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
 }
